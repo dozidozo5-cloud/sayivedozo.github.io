@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayive Dozo | Draghooker | Nagaland Left-Hand Arm Wrestler</title>
+  <meta name="description" content="Sayive Dozo, known as Draghooker, is a Nagaland-based left-hand arm wrestler competing toward the 55 kg class. Inspired by Alizhan Muratov, he is building his left hand with the goal of becoming one of Nagaland's strongest left-hand pullers.">
+  <meta name="keywords" content="Sayive Dozo, Draghooker, Nagaland arm wrestling, Nagaland left hand arm wrestler, 55 kg arm wrestling, left hand arm wrestling, Alizhan Muratov">
+  <meta name="author" content="Sayive Dozo">
+  <meta property="og:title" content="Sayive Dozo — Draghooker">
+  <meta property="og:description" content="The journey of a Nagaland left-hand arm wrestler chasing the 55 kg division and inspired by Alizhan Muratov.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg: #070707;
+      --panel: #111111;
+      --panel2: #171717;
+      --text: #f5f5f5;
+      --muted: #a7a7a7;
+      --line: #292929;
+      --accent: #d8ff3e;
+      --accent2: #9fca20;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(92%, var(--max)); margin: auto; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(7,7,7,.82);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .brand span { color: var(--accent); }
+    .links { display: flex; gap: 22px; color: #c9c9c9; font-size: .92rem; }
+    .links a:hover { color: var(--accent); }
+
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      align-items: center;
+      padding: 80px 0;
+      background:
+        radial-gradient(circle at 78% 28%, rgba(216,255,62,.13), transparent 28%),
+        radial-gradient(circle at 20% 70%, rgba(255,255,255,.05), transparent 30%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: .78rem;
+      letter-spacing: .18em;
+      font-weight: 800;
+    }
+    h1 {
+      font-size: clamp(3.3rem, 9vw, 7.5rem);
+      line-height: .9;
+      margin: 14px 0 24px;
+      letter-spacing: -.06em;
+      text-transform: uppercase;
+    }
+    h1 small {
+      display: block;
+      font-size: .27em;
+      letter-spacing: .14em;
+      color: var(--muted);
+      margin-top: 22px;
+    }
+    .hero p {
+      color: #c7c7c7;
+      max-width: 690px;
+      font-size: 1.08rem;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 8px 12px;
+      border: 1px solid #4c4c4c;
+      border-radius: 999px;
+      font-size: .82rem;
+      color: #ddd;
+    }
+
+    .hero-card {
+      min-height: 430px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        linear-gradient(145deg, #1b1b1b, #0b0b0b 70%);
+      display: flex;
+      align-items: end;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(0,0,0,.45);
+    }
+    .hero-card::before {
+      content: "🐺";
+      position: absolute;
+      font-size: 15rem;
+      right: -25px;
+      top: 10px;
+      opacity: .08;
+      filter: grayscale(1);
+    }
+    .hero-card .quote {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(1.6rem, 3vw, 2.5rem);
+      font-weight: 900;
+      line-height: 1.08;
+      max-width: 450px;
+      text-transform: uppercase;
+    }
+    .hero-card .quote span { color: var(--accent); }
+
+    section { padding: 92px 0; border-top: 1px solid var(--line); }
+    .section-kicker {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-weight: 800;
+      font-size: .76rem;
+    }
+    h2 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1;
+      margin: 10px 0 32px;
+      letter-spacing: -.04em;
+      text-transform: uppercase;
+    }
+    .intro {
+      color: #c4c4c4;
+      max-width: 820px;
+      font-size: 1.05rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 38px;
+    }
+    .stat {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+    }
+    .stat strong { display: block; font-size: 2rem; color: var(--accent); }
+    .stat span { color: var(--muted); font-size: .86rem; }
+
+    .story-grid, .goal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+    }
+    .story p { color: #c8c8c8; }
+    .highlight {
+      border-left: 3px solid var(--accent);
+      padding: 8px 0 8px 22px;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .timeline { margin-top: 38px; display: grid; gap: 16px; }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 20px;
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .timeline-item b { color: var(--accent); }
+    .timeline-item p { margin: 0; color: #c6c6c6; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 38px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+    }
+    .card .num {
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 1.6rem;
+    }
+    .card h3 { margin: 12px 0 8px; font-size: 1.2rem; }
+    .card p { color: var(--muted); margin: 0; }
+
+    .quote-section {
+      text-align: center;
+      background: #0c0c0c;
+    }
+    blockquote {
+      margin: 0 auto;
+      max-width: 900px;
+      font-size: clamp(2rem, 5vw, 4.2rem);
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: -.045em;
+      text-transform: uppercase;
+    }
+    blockquote span { color: var(--accent); }
+
+    footer {
+      padding: 38px 0;
+      border-top: 1px solid var(--line);
+      color: #888;
+      font-size: .88rem;
+    }
+    footer strong { color: #ddd; }
+
+    .note {
+      margin-top: 24px;
+      color: #777;
+      font-size: .82rem;
+    }
+
+    @media (max-width: 820px) {
+      .links { display: none; }
+      .hero-grid, .story-grid, .goal-grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding: 70px 0; }
+      .hero-card { min-height: 300px; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .cards { grid-template-columns: 1fr; }
+      section { padding: 70px 0; }
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 3.2rem; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .stat strong { font-size: 1.55rem; }
+      .timeline-item { grid-template-columns: 1fr; gap: 5px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sayive Dozo",
+    "alternateName": "Draghooker",
+    "description": "Nagaland-based left-hand arm wrestler developing toward the 55 kg class and inspired by Alizhan Muratov.",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Nagaland, India"
+    },
+    "knowsAbout": [
+      "Left-hand arm wrestling",
+      "Hook arm wrestling",
+      "Drag-hook technique"
+    ],
+    "sameAs": []
+  }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">SAYIVE <span>DOZO</span></a>
+      <div class="links">
+        <a href="#story">Story</a>
+        <a href="#style">Style</a>
+        <a href="#results">Results</a>
+        <a href="#goals">Goals</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Nagaland • Left Hand • 55 kg</div>
+          <h1>Sayive Dozo<small>Known as “Draghooker”</small></h1>
+          <p>
+            A Nagaland-based left-hand arm wrestler rebuilding from the ground up,
+            inspired by Alizhan Muratov and chasing a long-term goal:
+            becoming one of the strongest left-hand pullers in Nagaland.
+          </p>
+          <span class="tag">The Next Alizhan of Nagaland — a goal, not a claimed title.</span>
+        </div>
+
+        <div class="hero-card">
+          <div class="quote">
+            From a broken right-arm chapter
+            to a <span>left-hand mission.</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrap">
+        <div class="section-kicker">The athlete</div>
+        <h2>Built for the left.</h2>
+        <p class="intro">
+          Sayive Dozo, known in armwrestling as <strong>Draghooker</strong>, is a
+          Nagaland-based arm wrestler currently weighing about 53 kg and developing
+          toward the 55 kg left-hand class. His current focus is the left hand,
+          with a natural preference for the hook and a growing interest in the
+          explosive dragging style of Alizhan Muratov.
+        </p>
+
+        <div class="stats">
+          <div class="stat"><strong>53 kg</strong><span>Current listed weight</span></div>
+          <div class="stat"><strong>55 kg</strong><span>Target left-hand class</span></div>
+          <div class="stat"><strong>LEFT</strong><span>Primary competition focus</span></div>
+          <div class="stat"><strong>🐺</strong><span>Long-term mission</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="wrap">
+        <div class="section-kicker">The story</div>
+        <h2>The right hand ended. The left hand began.</h2>
+
+        <div class="story-grid">
+          <div class="story">
+            <p>
+              Sayive's original competitive weapon was his right hand. At its prime,
+              he describes it as strong enough to compete against athletes in the
+              70 kg and 80 kg categories.
+            </p>
+            <p>
+              In October 2025, during a tournament, his right arm was injured around
+              the elbow. Although the arm later recovered for normal use, it never
+              returned to its former level for armwrestling. Instead of quitting,
+              Sayive made a difficult decision: build a new weapon.
+            </p>
+          </div>
+
+          <div class="story">
+            <p>
+              He switched his focus to the left hand. At the beginning, the left
+              was extremely weak — even lifting 10 kg was difficult. After training
+              consistently for nearly a month, he began feeling noticeable progress
+              in lifting and arm-specific training.
+            </p>
+            <p class="highlight">
+              The left hand is still developing. The journey is intentionally being
+              documented from the beginning.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <b>BEFORE</b>
+            <p>Right hand was the dominant competitive weapon and could compete in heavier categories.</p>
+          </div>
+          <div class="timeline-item">
+            <b>OCT 2025</b>
+            <p>Right elbow injury during a tournament changed the direction of the armwrestling journey.</p>
+          </div>
+          <div class="timeline-item">
+            <b>SWITCH</b>
+            <p>Left hand became the new primary project after the right no longer felt the same for competition.</p>
+          </div>
+          <div class="timeline-item">
+            <b>NOW</b>
+            <p>Slow, steady left-hand development toward the 55 kg class, with Muratov-inspired technique study.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="style">
+      <div class="wrap">
+        <div class="section-kicker">The style</div>
+        <h2>Drag. Hook. Finish.</h2>
+        <p class="intro">
+          “Draghooker” reflects the direction Sayive is building toward: a powerful
+          inside game combining hand control, dragging pressure, a natural hook,
+          and an explosive finish. The current style is still developing rather
+          than being presented as a finished professional system.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <div class="num">01</div>
+            <h3>Natural Hook</h3>
+            <p>The left hand currently feels naturally suited to an inside hook-based game.</p>
+          </div>
+          <div class="card">
+            <div class="num">02</div>
+            <h3>Muratov Study</h3>
+            <p>Learning from Alizhan Muratov's explosive strength, technique, training and dominant left-hand style.</p>
+          </div>
+          <div class="card">
+            <div class="num">03</div>
+            <h3>Build Slowly</h3>
+            <p>The priority is steady development of hand, wrist, forearm, arm and table technique.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results">
+      <div class="wrap">
+        <div class="section-kicker">Competition record</div>
+        <h2>Proof will come from the table.</h2>
+        <p class="intro">
+          The journey already includes tournament experience. Results listed here
+          are based on Sayive's current personal record and can be expanded with
+          tournament names, dates, opponents, weight classes and photographs as the
+          record grows.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <div class="num">🥉</div>
+            <h3>3rd Place</h3>
+            <p>Recorded tournament podium finish.</p>
+          </div>
+          <div class="card">
+            <div class="num">4th</div>
+            <h3>4th Place</h3>
+            <p>Recorded tournament placement.</p>
+          </div>
+          <div class="card">
+            <div class="num">🥈</div>
+            <h3>Silver Medal</h3>
+            <p>Second place in an open-weight tournament in a village-area competition.</p>
+          </div>
+        </div>
+
+        <p class="note">
+          Detailed event names, dates and divisions can be added when available.
+          No result is presented as an official state title on this page.
+        </p>
+      </div>
+    </section>
+
+    <section id="goals">
+      <div class="wrap">
+        <div class="section-kicker">The mission</div>
+        <h2>Not a title yet. A target.</h2>
+
+        <div class="goal-grid">
+          <div>
+            <p class="highlight">
+              “I want to become the strongest left-hand arm wrestler in Nagaland.”
+            </p>
+            <p class="intro">
+              That is the immediate ambition. The goal is not being claimed as an
+              achievement today; it is the reason for the work.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              The long-term dream goes beyond Nagaland: become a 55 kg left-hand
+              champion, become known internationally, develop strong sportsmanship,
+              move through higher weight divisions over time, and one day chase the
+              dream of becoming one of the world's greatest arm wrestlers.
+            </p>
+            <p>
+              Alizhan Muratov is the main inspiration — especially his explosive
+              strength, technique, training and dominant left-hand performances.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="wrap">
+        <blockquote>
+          “The right hand was my past.<br>
+          <span>The left hand is my mission.</span>”
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>Sayive Dozo • Draghooker</strong><br>
+      Nagaland, India • Left-hand arm wrestling • 55 kg goal
+      <div class="note">
+        This is a personal athlete profile and journey page. It does not claim an
+        official state or world ranking.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
